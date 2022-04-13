@@ -1,0 +1,19 @@
+{
+  "name": "stephanmax.com",
+  "version": "0.1.0",
+  "description": "Digital profile and playground",
+  "keywords": [],
+  "homepage": "https://stephanmax.com",
+  "scripts": {
+    "start": "eleventy --serve"
+  },
+  "author": {
+    "name": "Stephan Max",
+    "email": "hello@stephanmax.com",
+    "url": "https://stephanmax.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}
