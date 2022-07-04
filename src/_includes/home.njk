@@ -8,27 +8,14 @@ layout: base
   </header>
 
   {{ content | safe }}
-</main>
 
-<aside>
   <h2>Writing</h2>
   <ul>
     {% for article in collections.writing | reverse %}
-    <li><a href="{{ article.url }}">{{ article.data.title }}</a></li>
+    <li>
+      <time datetime="{{ article.data.created | ISOString }}">{{ article.data.created | ISOString }}</time>
+      <a href="{{ article.url }}">{{ article.data.title }}</a>
+    </li>
     {% endfor %}
   </ul>
-</aside>
-
-<footer>
-  <h2>Contact</h2>
-  <address>
-    <dl>
-      <dt>Email</dt>
-      <dd><a rel="me" href="mailto:hello@stephanmax.com">hello@stephanmax.com</a> <a href="https://keybase.io/stephanmax/pgp_keys.asc?fingerprint=c39b112b14c13ff673a30963a1cd0f9a894601f3" rel="me" class="naked" title="Public Key">🔒</a></dd>
-      <dt>Mastodon</dt>
-      <dd><a rel="me" href="https://chaos.social/@stephanmax">stephanmax@chaos.social</a></dd>
-      <dt>Github</dt>
-      <dd><a rel="me" href="https://github.com/stephanmax">stephanmax</a></dd>
-    </dl>
-  </address>
-</footer>
+</main>

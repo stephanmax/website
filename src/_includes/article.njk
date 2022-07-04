@@ -2,12 +2,15 @@
 layout: base
 ---
 
-<nav>
-  <a href="/" class="naked" title="Back Home">⦿</a>
-</nav>
-
 <article>
   <h1>{{ title }}</h1>
 
   {{ content | safe }}
+
+  <p>
+    Published <time datetime="{{ created | ISOString }}">{{ created | ISOString }}</time>.
+    {% if updated %}
+    Updated <time datetime="{{ updated | ISOString }}">{{ updated | ISOString }}</time>.
+    {% endif %}
+  </p>
 </article>

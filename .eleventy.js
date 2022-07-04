@@ -1,6 +1,7 @@
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("./src/styles/");
-  eleventyConfig.addWatchTarget("./src/styles/");
+  eleventyConfig.addNunjucksFilter('ISOString', function(val) {
+    return val.toISOString().substring(0, 10);
+  });
 
   return {
     dir: {

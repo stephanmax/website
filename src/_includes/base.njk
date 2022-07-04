@@ -5,9 +5,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }} • {{ pkg.author.name }}</title>
-  <link rel="stylesheet" href="/styles/main.css">
+  <style>
+    html {
+      font-family: sans-serif;
+      font-size: clamp(1rem, 2vw, 1.125rem);
+      line-height: 1.45;
+    }
+    body {
+      margin: auto;
+      max-width: 70ch;
+      padding: 2ch;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    article hr {
+      border: none;
+      color: inherit;
+      text-align: center;
+    }
+    article hr:after {
+      content: "❦";
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-dark: #fefefe;
+        --color-darker: #fff;
+        --color-light: #111;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <p><a href="/">Home</a></p>
+    <br><hr>
+  </header>
+
   {{ content | safe }}
+
+  <footer>
+    <br><hr>
+    <p><code>@stephanmax</code> via <a rel="me" href="mailto:hello@stephanmax.com">Email</a> • <a rel="me" href="https://chaos.social/@stephanmax">Mastodon</a> • <a rel="me" href="https://github.com/stephanmax">Github</a></p>
+  </footer>
 </body>
 </html>
