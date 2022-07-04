@@ -1,0 +1,28 @@
+---
+permalink: feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xml:base="{{ pkg.homepage }}">
+  <channel>
+    <title>{{ pkg.name }}</title>
+    <link>{{ pkg.homepage }}</link>
+    <atom:link href="{{ page.url | absoluteUrl(pkg.homepage) }}" rel="self" type="application/rss+xml" />
+    <description>{{ pkg.description }}</description>
+    <language>en-US</language>
+    <lastBuildDate>{{ collections.writing | getNewestCollectionItemDate | dateToRfc822 }}</lastBuildDate>
+    {%- for item in collections.writing | reverse %}
+      {% set absolutePostUrl %}{{ item.url | url | absoluteUrl(pkg.homepage) }}{% endset %}
+      {%- set emailReplyHTML -%}<p><a href="mailto:{{ pkg.author.email }}?subject=Re: “{{ item.data.title }}”">Reply via email</a></p>{%- endset -%}
+      {%- set finalHTMLContent = [item.templateContent, emailReplyHTML] | join -%}
+      <item>
+        <title>{{ item.data.title }}</title>
+        <link>{{ absolutePostUrl }}</link>
+        <description>{{ finalHTMLContent | htmlToAbsoluteUrls(absolutePostUrl) }}</description>
+        <author>{{ pkg.author.email }} ({{ pkg.author.name }})</author>
+        <pubDate>{{ item.data.created | dateToRfc822 }}</pubDate>
+        <guid isPermaLink="true">{{ absolutePostUrl }}</guid>
+      </item>
+    {%- endfor %}
+  </channel>
+</rss>
