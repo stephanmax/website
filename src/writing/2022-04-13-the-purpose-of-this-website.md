@@ -1,9 +1,10 @@
 ---
 title: The Purpose of This Website
 created: 2022-04-13
+updated: 2022-07-04
 ---
 
-The [results of the Wayback Machine for this domain](https://web.archive.org/web/*/stephanmax.is) reveal that I created the [first blog post on October 14, 2013](https://web.archive.org/web/20150106205637/http://stephanmax.is/writingabout/fire-up-sml-inside-your-vim-editor). That means this personal website is nearing its tenth anniversary. However, I am not longing for this arbitrary milestone with pride or even mere comfort. Because the story of my personal website and me has been a story of misunderstandings, struggle, and neglect. The paragraphs that follow are my written pledge to give this story a happy ending.
+The [results of the Wayback Machine for my old domain](https://web.archive.org/web/*/stephanmax.is) reveal that I created the [first blog post on October 14, 2013](https://web.archive.org/web/20150106205637/http://stephanmax.is/writingabout/fire-up-sml-inside-your-vim-editor). That means this personal website is nearing its tenth anniversary. However, I am not longing for this arbitrary milestone with pride or even mere comfort. Because the story of my personal website and me has been a story of misunderstandings, struggle, and neglect. The paragraphs that follow are my written pledge to give this story a happy ending.
 
 But first I need to address the obvious question: If this project has been such a source of discomfort and struggle why not delete domain and code repository and be done with it? Why do I want to keep a personal presence on the Internet? A good question that aligns with my recent endeavor to [start thinking about challenges with the question *Why?*](https://simonsinek.com/product/start-with-why/)
 
@@ -23,7 +24,11 @@ The fourth reason for a personal website is open learning. Prominent examples ra
 
 Before we get back to the topic of inspiration and *the* category of personal websites that triggers those wonderful serendipitous thoughts and sparks deep curiosity like no other, I want to give a quick shout-out to a rare, but no less awesome species: The micro blog! I immensely enjoy getting lost in the timelines of [Pat Dryburgh](https://patdryburgh.com/) or [Manton Reece](https://www.manton.org/) (driving force behind the [micro.blog platform](https://micro.blog/)), to name two examples. There is something soothing about people sharing their actions, thoughts, and experiences in an immediate and unfiltered manner.
 
-For me, the sixth and final reason to have a personal website is my favorite: To have a personal playground! After beating around the bushes for several paragraphs I need to throw it out there: **HOW FREAKIN’ COOL IS IT TO HAVE YOUR OWN CORNER ON THE INTERNET?** It gives you the power to exercise your right to free speech, it enables you to present yourself to the world the way *you* choose, you can use it as a platform to practice your craft (writing, coding, graphic design, photography, …), it is your permanent home on the biggest manmade network in existence. I have countless examples that showcase how people tailored their personal website to a wonderful extension of their personality: [Charlie Owen](https://sonniesedge.co.uk/), [Cheapskate](https://cheapskatesguide.org), [Tim Holman](https://tholman.com/), [Justin Jackson](https://justinjackson.ca/).
+For me, the sixth and final reason to have a personal website is my favorite: To have a personal playground! After beating around the bushes for several paragraphs I need to throw it out there:
+
+**How freakin’ cool is having your own corner on the internet?**
+
+It gives you the power to exercise your right to free speech, it enables you to present yourself to the world the way *you* choose, you can use it as a platform to practice your craft (writing, coding, graphic design, photography, …), it is your permanent home on the biggest manmade network in existence. I have countless examples that showcase how people tailored their personal website to a wonderful extension of their personality: [Charlie Owen](https://sonniesedge.co.uk/), [Cheapskate](https://cheapskatesguide.org), [Tim Holman](https://tholman.com/), [Justin Jackson](https://justinjackson.ca/).
 
 All these websites make up what some call the 90s web, the non-mainstream web, the indie web—and I am part of it since October 14, 2013. But why am I not happy?
 
