@@ -1,3 +1,4 @@
+const pkg = require('./package.json');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
@@ -5,8 +6,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
   // Filters
-  eleventyConfig.addNunjucksFilter('ISOString', function(val) {
-    return val.toISOString().substring(0, 10);
+  eleventyConfig.addNunjucksFilter('ISOString', (date) => {
+    return date.toISOString().substring(0, 10);
+  });
+  eleventyConfig.addNunjucksFilter('absoluteURL', (url) => {
+    return new URL(url, pkg.homepage).href;
   });
 
   // General Config
