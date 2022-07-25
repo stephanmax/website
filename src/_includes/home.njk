@@ -9,8 +9,8 @@ layout: base
 
   {{ content | safe }}
 
-  <h2>Writing</h2>
-  <ul>
+  <h2>Posts</h2>
+  <ul class="dated-list">
     {% for article in collections.writing | reverse %}
     <li>
       <time datetime="{{ article.data.created | ISOString }}">{{ article.data.created | ISOString }}</time>

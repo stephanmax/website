@@ -5,7 +5,7 @@
   "keywords": [],
   "homepage": "https://stephanmax.com",
   "scripts": {
-    "start": "eleventy --serve"
+    "start": "DEBUG=Eleventy* eleventy --serve"
   },
   "author": {
     "name": "Stephan Max",
@@ -14,7 +14,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy-img": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0"
   }
 }

@@ -1,5 +1,6 @@
 {
   "layout": "article",
   "permalink": "{{ page.fileSlug }}/",
-  "tags": ["writing"]
+  "tags": ["writing"],
+  "date": "git Last Modified"
 }

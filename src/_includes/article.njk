@@ -2,15 +2,16 @@
 layout: base
 ---
 
+{% set dateCreated = created | ISOString %}
+{% set dateModified = page.date | ISOString %}
+
 <article>
   <h1>{{ title }}</h1>
-
-  {{ content | safe }}
-
   <p>
-    Published <time datetime="{{ created | ISOString }}">{{ created | ISOString }}</time>.
-    {% if updated %}
-    Updated <time datetime="{{ updated | ISOString }}">{{ updated | ISOString }}</time>.
+    Published <time datetime="{{ dateCreated }}">{{ dateCreated }}</time>.
+    {% if dateCreated !== dateModified %}
+      Last modified <time datetime="{{ dateModified }}">{{ dateModified }}</time>.
     {% endif %}
   </p>
+  {{ content | safe }}
 </article>
